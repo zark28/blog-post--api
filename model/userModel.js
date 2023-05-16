@@ -6,7 +6,7 @@ const User = sequelize.define('User', {
 
     // Model attributes are defined here
     userID:{
-        type: DataTypes.UUID,
+        type: DataTypes.UUID, //FOR GENERATING AUTOMATIC UUIDS
         defaultValue: DataTypes.UUIDV4,
         primaryKey: true,
         allowNull: false

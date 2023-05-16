@@ -19,6 +19,7 @@ const Post = sequelize.define('post', {
     },
     userID : {
       type: DataTypes.UUID,
+      //SETTING FOREING KEYS
       references: {
         model: 'users',
         key: 'userID'
